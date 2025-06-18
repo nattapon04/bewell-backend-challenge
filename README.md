@@ -30,7 +30,7 @@ Run command:
 - go mod vendor
 - go mod tidy
 
-ENV in .env file:
+### Example ENV in .env file:
 ```bash
 APP_NAME="bewell-backend-challenge"
 APPLICATION_NAME=bewell backend challenge
@@ -44,25 +44,16 @@ HTTP_CLIENT_TIMEOUT=30
 Setup database and run service:
 
     - Create database in docker container
-
-        ```bash
         docker compose up -d
-        ```
     
     - Run API
         The server will run on port 8080. (<http://localhost:8080>)
 
     - Run local
-
-        ```bash
          go run cmd/main.go
-        ```
 
     - Run test
-
-        ```bash
          go test -v ./...
-        ```
 
 ### Sample API Request/Response
 ```bash
